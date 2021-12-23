@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UFQ.css">
+    <link rel="stylesheet" href="Game.css">
+    <link rel="stylesheet" href="style.css" />
+
+    
+    <title>Game Page</title>
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="hud"> <!-- HUD or status bar is the method by which information is visually relayed to the player as part of a game's user interface -->
+                <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                        Question
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">0</h1>
+                    <h2 class="hud-main-text " id="timer">you only have 5 min</h2>
+                </div>
+                </div>
+<h1 id="question">What is the answer</h1>
+<div class="choice-container">
+    <p class="choice-prefix">A</p>
+    <p class="choice-text" data-number="1">Choice </p>  <!--  data attribute-- to know what we are clicking on -->
+</div>
+
+<div class="choice-container">
+    <p class="choice-prefix">B</p>
+    <p class="choice-text" data-number="2">Choice 2</p>  <!--  data attribute-- to know what we are clicking on -->
+</div>
+
+<div class="choice-container">
+    <p class="choice-prefix">C</p>
+    <p class="choice-text" data-number="3">Choice 3</p>   <!-- data attribute-- to know what we are clicking on -->
+</div>
+
+<div class="choice-container">
+    <p class="choice-prefix">D</p>
+    <p class="choice-text" data-number="4">Choice 4</p>  <!--  data attribute-- to know what we are clicking on-->
+</div>    
+            </div>
+      
+    </div>
+        <a href="UFQ.html" class="playAgain">Go Home</a>
+    
+    <script src="Game.js"></script>
+</body>
+</html>
+<script src="cute-alert.js"></script>
